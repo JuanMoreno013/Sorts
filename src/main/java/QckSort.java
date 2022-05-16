@@ -10,7 +10,6 @@ public class QckSort {
 
         for (int i = 0; i < n; ++i)
             System.out.print(array[i] + " ");
-
     }
     //Worst= O(n^2)
 //Super linear functions = f(n) = n lg n
