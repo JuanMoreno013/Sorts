@@ -4,7 +4,7 @@ public class ShkerSort {
 
     public static void main(String[] args) {
         ShkerSort shk = new ShkerSort();
-        int array[]={4,8,6,5,7,9};
+        int array[]={4,8,6,5,9,7,10,18,13,1,4};
 
         shk.shaker(array);
 
@@ -20,7 +20,7 @@ public class ShkerSort {
         izq = 1;
         der = arreglo.length-1;
         k= arreglo.length-1;
-        while(izq <= der){
+        while(izq <= der){    //loop to compare n swap the to right
             for(i=der; i >=izq; i--){
                 comparaciones++;
                 if(arreglo[i-1] > arreglo[i]){
@@ -32,7 +32,7 @@ public class ShkerSort {
                 }
             }
             izq = k+1;
-            for(i = izq; i<=der; i++){
+            for(i = izq; i<=der; i++){  //loop to compare n swap the to left
                 comparaciones++;
                 if(arreglo[i-1] > arreglo[i]){
                     intercambios++;
